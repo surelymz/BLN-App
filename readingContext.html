@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Text Summarizer</title>
+  </head>
+  <body>
+    <h1>Text Summarizer</h1>
+    <form>
+      <label for="text">Enter the reading passage:</label><br>
+      <textarea id="text" name="text" rows="10" cols="50"></textarea><br><br>
+      <label for="subject">Enter the subject:</label><br>
+      <input type="text" id="subject" name="subject"><br><br>
+      <label for="length">Enter the length of the summary (in tokens):</label><br>
+      <input type="number" id="length" name="length" value="50"><br><br>
+      <button type="button" onclick="summarize()">Summarize</button>
+    </form>
+    <div id="summary"></div>
+    <div id="context"></div>
+    <script src="summarize.js"></script>
+  </body>
+</html>
